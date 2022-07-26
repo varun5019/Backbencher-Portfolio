@@ -1,0 +1,929 @@
+@import "fonts.css";
+
+:root{
+    --default:#171717;
+    --heading : #8EFFBB;
+    --text : #FFFFFF;
+    --back : #F5F9FF;
+    --secondary: #FFC38E;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #171717;
+    position: relative;
+}
+
+
+/* 
+   ################################
+   ################# Navbar 
+   ################################  
+*/
+
+#navBar .navbar{
+    height: 13vh;
+}
+
+#navBar .navbar-brand img{
+    width: 8em;
+}
+
+#navBar .navbar>.container{
+    /* border-bottom: 1px solid #b2b1b1; */
+    padding: 20px 0;
+}
+
+#navBar .nav_links{
+    width: auto;
+    padding-right: 10px;
+}
+
+#navBar .nav_links a{
+    padding-left: 80px; 
+    text-decoration: none;
+    font-family: PoppinsLight,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    overflow: hidden;
+    white-space : nowrap;
+    color: var(--text);
+    opacity: 80%;
+}
+#navBar .nav_links a:hover{
+    color: #8EFFBB;
+    /* font-family:Devils,sans-serif; */
+}
+#navBar .nav_links a.active{
+    color: #8EFFBB;
+    font-family:Devils,sans-serif;
+}
+
+/* 
+   ################################
+   ################# Home 
+   ################################  
+*/
+
+#home{
+    display: flex;
+    background-image: url("../images/backgroundimg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+#home .homeContent{
+    position: absolute;
+    top: 35vh;
+}
+#home .homeContent h1{
+    color: var(--heading);
+    font-size: 6rem;
+    font-family:Zallord,sans-serif;
+    margin: 1rem 0 2rem 0;
+}
+
+#home .homeContent p{
+    color: var(--text);
+    opacity: 0.9;
+    margin: 0 auto;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+#home .homeContent button{
+    background-image: url("../1.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#home .homeContent button:hover{
+
+    transition-timing-function: ease-in;
+    transition: 0.75s;
+
+    background-image: url("../2.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.scrolldown {
+    --color: white;
+    opacity: 0.9;
+    --sizeX: 30px;
+    --sizeY: 45px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin:auto;
+    border: calc(var(--sizeX) / 15) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+    background: #171717;
+  }
+  
+  .scrolldown:before {
+    content: "";
+    position: absolute;
+    bottom: 25px;   
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background-color: var(--color);
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #ffffff66;
+  }
+  .scrolldown:hover:before{
+    animation: scrolldown-anim 2s infinite;
+  }
+  
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+
+/* 
+   ################################
+   ################# Who 
+   ################################  
+*/
+
+#who{
+    height: 100%;
+    padding: 6rem 0;
+}
+
+#who .leftSection{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#who .leftSection img{
+    height: 75vh;
+}
+
+.heading{
+    font-size: 3.5rem;
+    font-family:Zallord,sans-serif;
+    color: var(--heading);
+
+    padding-bottom: 2rem;
+
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+#who p{
+    font-size: 1rem;
+    font-family: var(--text);
+    color: var(--text);
+
+    padding-bottom: 2rem;
+}
+
+#who button{
+    background-image: url("../1.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#who button:hover{
+    background-image: url("../2.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+
+/*
+
+/* 
+   ################################
+   ################# Fresh 
+   ################################  
+*/
+
+#fresh{
+    height: 90vh;
+    padding: 4rem 0;
+    background-color: #1C1D20;
+    clip-path: polygon(5% 0, 100% 0, 100% 75%, 95% 100%, 0 100%, 0 25%);
+}
+#fresh .heading{
+    text-align: center;
+}
+
+#fresh  .imgContainer .freshCard{
+    background-image: url("../images/card1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 400px;
+    width: 314px;
+
+    padding: 1.6rem;
+}
+#fresh  .imgContainer .freshCard .cardImg{
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 25%);
+    background-color: #2D2B34;
+    width: 100%;
+    height: 8rem;
+}
+
+#fresh  .imgContainer .freshCard h4{
+    font-size: 1rem;
+    color: #8EFFBB;
+    font-family: Devils,sans-serif;
+    
+    padding: 1.6rem 0;
+    margin: 0 5px;
+}
+
+
+#fresh  .imgContainer .freshCard p{
+    font-size: 0.7rem;
+    color: var(--text);
+    text-align: left;
+}
+
+#fresh  .imgContainer .freshCard button{
+    background-image: url("../1.png");
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#fresh  .imgContainer .freshCard button:hover{
+    background-image: url("../2.png");
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+/*
+ ################################
+ ################# What he do
+ ################################
+ */
+
+ #whathedo{
+    padding: 4rem 0;
+    height: 87vh;
+}
+
+#whathedo h1{
+    font-family: Zallord,sans-serif;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+#whathedo .rightside{
+    display: flex;
+}
+
+#whathedo .sideimages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#whathedo .sideimages .line{
+    margin-top: -1rem;
+    z-index: -5;
+}
+
+#whathedo .sideimages button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: auto;
+    width: auto;
+}
+
+#whathedo .sideimages .imager{
+    margin-top: -3rem;
+
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+#whathedo .sideimages .chosen{
+    height: 5rem;
+    width: 5rem;
+
+    transition-timing-function: ease-out;
+    transition: 0.75s;
+}
+
+#whathedo .rightside .texter{
+    margin-top: 4rem;
+    margin-left: 2rem;
+
+    display: none;
+}
+
+#whathedo .rightside .texter.Disp{
+    display: block;
+    transition-timing-function: ease-in;
+    transition: 5s;
+}
+/* 
+#whathedo .rightside .texter .disp{
+    display: none;
+} */
+
+#whathedo .rightside .texter .innerhead1{
+    font-family: Devils,sans-serif;
+    color: var(--heading);
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .innerhead2{
+    font-family: Devils,sans-serif;
+    color: #8ECAFF;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .innerhead3{
+    font-family: Devils,sans-serif;
+    color: #FF8E8E;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .desc{
+    /* margin-top: 0; */
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+#whathedo .rightside .texter button{
+    background-image: url("../1.png");
+    border: none;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#whathedo .sider{
+    height: 90%;
+    width: 90%;
+}
+
+/* 
+################################
+   ################# Get In Touch
+   ################################  
+*/
+
+#getInTouch{
+    padding: 4rem 0;
+    height: 100%;
+}
+
+#getInTouch h1{
+    font-size: 5rem;
+    font-family: Zallord,sans-serif;
+    color: var(--heading);
+
+    padding-bottom: 2rem;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#getInTouch img{
+    height: 85%;
+    width: 85%;
+}
+
+#getInTouch .contactForm .singleInputGroup{
+    padding-bottom: 2rem;
+}
+
+#getInTouch .contactForm .singleInputGroup p{
+    font-size: 1rem;
+    color: #8EFFBB;
+    font-family: Devils,sans-serif;
+}
+
+#getInTouch .contactForm .singleInputGroup .outerInputField{
+    /* clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 40%); */
+    position: relative;
+    background: var(--heading);
+	-webkit-clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+    /* background-color: #1C1D20; */
+    width: 30rem;
+    height: 3rem;
+}
+
+#getInTouch .contactForm .singleInputGroup .outerInputField .innerInputField{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #2E3240;
+	-webkit-clip-path: polygon(5% 0, 100% 0, 100% 54%, 95% 100%, 0 100%, 0 46%);
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+}
+
+
+#getInTouch .contactForm .singleInputGroup .outerInputField .innerInputField input{
+    width: 90%;
+    height: 80%;
+    margin: 0.3rem 1.5rem;
+
+    background-color: transparent;
+    color: var(--text);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+#getInTouch .contactForm button{
+    width: 30rem;
+    height: 3rem;
+    background-color: var(--heading);
+
+    clip-path: polygon(4% 0, 100% 0, 100% 70%, 96% 100%, 0 100%, 0 30%);
+
+    border: none;
+    outline: none;
+
+    color: var(--default);
+    font-size: 1rem;
+    font-family: Devils,sans-serif;
+}
+
+/*
+ ################################
+ ################# Footer
+ ################################
+ */
+
+ #whathedo{
+    padding: 4rem 0;
+    height: 87vh;
+}
+
+#whathedo h1{
+    font-family: Zallord,sans-serif;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+#whathedo .rightside{
+    display: flex;
+}
+
+#whathedo .sideimages{
+    display: flex;
+    flex-direction: column;
+}
+
+ #footer{
+    height: 6rem;
+    background-color: var(--default);
+    color: var(--text);
+    font-size: 1rem;
+
+    /* padding: 2.5rem; */
+    text-align: center;
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+    clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 44%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 44%);
+    background: var(--heading);
+
+}
+
+
+#whathedo .sideimages .line{
+    margin-top: -1rem;
+    z-index: -5;
+    
+}
+
+#whathedo .sideimages button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: auto;
+    width: auto;
+}
+
+#whathedo .sideimages .imager{
+    margin-top: -3rem;
+
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+#whathedo .sideimages .chosen{
+    height: 5rem;
+    width: 5rem;
+
+    transition-timing-function: ease-out;
+    transition: 0.75s;
+}
+
+#whathedo .rightside .texter{
+    margin-top: 4rem;
+    margin-left: 2rem;
+
+    display: none;
+}
+
+#whathedo .rightside .texter.Disp{
+    display: block;
+    transition-timing-function: ease-in;
+    transition: 5s;
+}
+/* 
+#whathedo .rightside .texter .disp{
+    display: none;
+} */
+
+#whathedo .rightside .texter .innerhead1{
+    font-family: Devils,sans-serif;
+    color: var(--heading);
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .innerhead2{
+    font-family: Devils,sans-serif;
+    color: #8ECAFF;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .innerhead3{
+    font-family: Devils,sans-serif;
+    color: #FF8E8E;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+#whathedo .rightside .texter .desc{
+    /* margin-top: 0; */
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+#whathedo .rightside .texter button{
+    background-image: url("../1.png");
+
+}
+#footer .outerFooter{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: var(--default);
+	clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 45%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 45%);
+
+    color: var(--text);
+}
+
+#footer .outerFooter .innerFooter{
+    padding: 1.8rem;
+}
+
+#footer .outerFooter .innerFooter .footerText p{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 0;
+    margin-top: 0.4rem;
+}
+#footer .outerFooter .innerFooter .socials .outerIcon{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: #CECECE;
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+
+    margin-right: 1rem;
+}
+#footer .outerFooter .innerFooter .socials .innerIcon{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    left: 1px;
+    bottom: 1px;
+    background-color: var(--default);
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+}
+
+#footer .outerFooter .innerFooter .socials .outerIcon .innerIcon button{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#footer .outerFooter .innerFooter .socials .outerIcon .innerIcon button>img{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+
+/*
+   ################################
+   ################# Centerpiece
+   ################################  
+*/
+#centerpiece{
+    height: 60vh;
+    display: flex;
+
+}
+#centerpiece .backimg{
+    background-image: url("../images/backer.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding:3rem;
+}
+#centerpiece .backimg h4{
+    font-family: Zallord,sans-serif;
+    font-size: 5rem;
+    color: var(--secondary);
+}
+#centerpiece .backimg p{
+    padding: 0 8rem;
+    margin-top: 2rem;
+    text-align: center;
+    color:var(--text);
+}
+#centerpiece .backimg button{
+    background-image: url("../1.png");
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+/* 
+   ################################
+   ################# Fresh 
+   ################################  
+*/
+
+#fresh{
+    height: 100vh;
+    width: auto;
+    padding: 4rem 0;
+    background-color: #1C1D20;
+    clip-path: polygon(5% 0, 100% 0, 100% 75%, 95% 100%, 0 100%, 0 25%);
+    display: flex;
+    flex-direction: column;
+}
+#fresh .heading{
+    text-align: center;
+}
+#fresh  #imgContainer .slide{
+    background-image: url("../images/card1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 4rem;
+    margin: auto 30px;
+    height: 400px;
+    width: 314px;
+    padding: 1.6rem;
+    margin-right: 3rem;
+}
+#fresh  #imgContainer .slide .cardImg{
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 25%);
+    background-color: #2D2B34;
+    width: 100%;
+    height: 8rem;
+}
+
+#fresh  #imgContainer .slide h4{
+    font-size: 1rem;
+    color: #8EFFBB;
+    font-family: Devils,sans-serif;
+    
+    padding: 1.6rem 0;
+    margin: 0 5px;
+}
+
+
+#fresh  #imgContainer .slide p{
+    font-size: 0.7rem;
+    color: var(--text);
+    text-align: left;
+}
+
+#fresh  #imgContainer .slide button{
+    background-image: url("../1.png");
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+#fresh  #imgContainer .slide button:hover{
+    background-image: url("../2.png");
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+/*
+   ################################
+   ################# Carousal Slider
+   ################################  
+*/
+#fresh #imgContainer{
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 10px;
+  /* margin-left: 4em; */
+    
+}
+#imgContainer #slider{
+    display: flex;
+    transition: all .5s;
+    width: 1000%;
+    height: 100%;
+}
+#fresh .sl {
+   /* position: absolute; */
+   margin-top: 3rem;
+   text-align: center;
+  }
+#fresh .sl .left:hover{
+    height: 105%;
+}
+#fresh .sl .right:hover{
+    height: 105%;
+} 
+
+/*
+ ################################
+ ################# Footer
+ ################################
+ */
+
+ #footer{
+     margin-top: 7rem;
+    height: 6rem;
+    background-color: var(--default);
+    color: var(--text);
+    font-size: 1rem;
+
+    /* padding: 2.5rem; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 44%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 44%);
+    background: var(--heading);
+
+}
+
+#footer .outerFooter{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: var(--default);
+	clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 45%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 45%);
+
+    color: var(--text);
+}
+
+#footer .outerFooter .innerFooter{
+    padding: 1.8rem;
+}
+
+#footer .outerFooter .innerFooter .footerText p{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 0;
+    margin-top: 0.4rem;
+}
+#footer .outerFooter .innerFooter .socials .outerIcon{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: #CECECE;
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+
+    margin-right: 1rem;
+}
+#footer .outerFooter .innerFooter .socials .innerIcon{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    left: 1px;
+    bottom: 1px;
+    background-color: var(--default);
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+}
+
+#footer .outerFooter .innerFooter .socials .outerIcon .innerIcon button{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#footer .outerFooter .innerFooter .socials .outerIcon .innerIcon button>img{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+#footer img{
+    height: 2rem;
+    width: 10rem;
+}

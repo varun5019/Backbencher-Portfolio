@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168.427" height="47.262" viewBox="0 0 168.427 47.262">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 23px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        stroke: #8effbb;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke: #171717;
+      }
+    </style>
+  </defs>
+  <g id="Component_6_1" data-name="Component 6 – 1" transform="translate(3.084 3.533)">
+    <text id="hruv-jindal" class="cls-1" transform="translate(105.343 27.056)"><tspan x="-59.443" y="0">hruv-jindal</tspan></text>
+    <g id="Group_9" data-name="Group 9" transform="translate(-2188.931 1273.84) rotate(-90)">
+      <g id="Group_6" data-name="Group 6" transform="translate(1233.636 2188.931)">
+        <path id="Path_718" data-name="Path 718" class="cls-2" d="M3171.16,228.487s19.228,22.535,40.2,0" transform="translate(-3171.16 -210.411)"/>
+        <path id="Path_719" data-name="Path 719" class="cls-2" d="M3171.159,228.487s16.041,9.129,33.539,0" transform="translate(-3167.237 -218.322)"/>
+        <line id="Line_10" data-name="Line 10" class="cls-2" x1="9.594" y1="13.128" transform="translate(7.67 0.41)"/>
+        <line id="Line_11" data-name="Line 11" class="cls-2" y1="13.128" x2="9.594" transform="translate(22.368 0.41)"/>
+        <path id="Path_720" data-name="Path 720" class="cls-3" d="M3414.48,262.359s-7.254,8.52-15.394,9.237" transform="translate(-3374.318 -244.392)"/>
+        <path id="Path_721" data-name="Path 721" class="cls-3" d="M3392.987,226.252c4.941-6.963,4.193-5.765,4.193-5.765" transform="translate(-3370.336 -213.224)"/>
+        <path id="Path_724" data-name="Path 724" class="cls-3" d="M0,5.843C4.941-1.119,4.193.079,4.193.079" transform="translate(6.888 4.026) rotate(-72)"/>
+        <path id="Path_722" data-name="Path 722" class="cls-3" d="M3392.987,220.71c.255-.359.217-.3.217-.3" transform="translate(-3365.304 -214.727)"/>
+        <path id="Path_723" data-name="Path 723" class="cls-3" d="M0,.3C.255-.058.216,0,.216,0" transform="matrix(0.629, 0.777, -0.777, 0.629, 22.649, 27.732)"/>
+      </g>
+    </g>
+  </g>
+</svg>

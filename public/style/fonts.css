@@ -1,0 +1,21 @@
+@font-face {
+    font-family: PoppinsBold;
+    src: url('/public/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: PoppinsRegular;
+    src: url('/public/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: PoppinsLight;
+    src: url('/public/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: Zallord;
+    src: url('/public/fonts/Zallord\ free.ttf');
+}
+@font-face {
+    font-family: Devils;
+    src: url('/public/fonts/Devil\ Breeze\ Bold.ttf');
+}
